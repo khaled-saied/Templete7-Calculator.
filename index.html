@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: right">
+      <i
+        id="icon-sun"
+        class="fa-regular fa-sun fa-2xl"
+        style="color: #b2b48f"
+      ></i>
+      <i
+        id="icon-moon"
+        class="fa-solid fa-moon fa-2xl"
+        style="color: #223659"
+      ></i>
+    </div>
+
+    <center>
+      <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Khaled&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Khaled&nbsp;</span>
+      </button>
+    </center>
+
+    <!--  -->
+    <center style="margin-top: 10px;">
+      <button class="btn" alt="calculator">
+        <i>C</i>
+        <i>a</i>
+        <i>l</i>
+        <i>c</i>
+        <i>&nbsp;</i>
+        <i>u</i>
+        <i>l</i>
+        <i>a</i>
+        <i>t</i>
+        <i>o</i>
+        <i>r</i>
+      </button>
+    </center>
+    <!-- //--// -->
+
+    <!-- Calculator -->
+    <div class="calculator">
+      <div class="output">
+        <span class="result" id="result">0</span>
+      </div>
+      <div class="buttons">
+        <button id="1" onclick="numFun(1)">1</button>
+        <button id="2" onclick="numFun(2)">2</button>
+        <button id="3" onclick="numFun(3)">3</button>
+        <button onclick="plus('+')">+</button>
+        <button id="4" onclick="numFun(4)">4</button>
+        <button id="5" onclick="numFun(5)">5</button>
+        <button id="6" onclick="numFun(6)">6</button>
+        <button onclick="minus('-')">-</button>
+        <button id="7" onclick="numFun(7)">7</button>
+        <button id="8" onclick="numFun(8)">8</button>
+        <button id="9" onclick="numFun(9)">9</button>
+        <button onclick="multiply('*')">*</button>
+        <button onclick="Delete()" class="bg-red">C</button>
+        <button id="0" onclick="numFun(0)">0</button>
+        <button onclick="Result()" class="bg-green">=</button>
+        <button onclick="divide('/')">/</button>
+      </div>
+    </div>
+
+    <footer>
+      <!-- Contact -->
+      <h2>
+        <center>Contact With Me</center>
+      </h2>
+
+      <center>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/khaled.said.31521?mibextid=ZbWKwL"
+          ><i class="fa-brands fa-facebook fa-xl" style="color: #223659"></i
+        ></a>
+
+        <!-- whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=+201113739658"
+          ><i
+            class="fa-brands fa-square-whatsapp fa-2xl"
+            style="color: #17d92d"
+          ></i
+        ></a>
+
+        <!-- Telegrame -->
+        <a href="https://t.me/joinchat/AAAAAEa9u179-_0a1Q?start=KhaledSaied0"
+          ><i class="fa-brands fa-telegram fa-2xl" style="color: #1d2f4e"></i
+        ></a>
+
+        <a href="tel:01112345678"
+          ><i class="fa-solid fa-phone fa-2xl" style="color: #24385c"></i
+        ></a>
+      </center>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

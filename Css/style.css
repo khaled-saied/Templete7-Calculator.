@@ -1,0 +1,234 @@
+/* Style For Calculator */
+.calculator {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 0.375rem;
+  width: 190px;
+  height: 254px;
+  font-family: Arial, sans-serif;
+  margin: 100px auto;
+  padding: 10px;
+}
+
+.output {
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.result {
+  font-size: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 0.375rem;
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
+.bg-green {
+  background-color: rgba(0, 177, 29, 0.651);
+  color: white;
+}
+
+.bg-green:hover {
+  background-color: rgba(0, 231, 39, 0.651);
+  color: white;
+}
+
+.bg-red {
+  background-color: rgba(223, 4, 4, 0.651);
+  color: white;
+}
+
+.bg-red:hover {
+  background-color: rgba(255, 1, 1, 0.651);
+  color: white;
+}
+
+
+/* Style */
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: #637E76;
+  --animation-color: #EEC759;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+/*  */
+
+.light{
+  text-align: center;
+  margin: auto;
+}
+
+#icon-sun,
+#icon-moon{
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#icon-sun{
+  display: none;
+}
+
+/* Footer */
+
+/*  */
+
+.btn {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 50px;
+ position: relative;
+ padding: 0 20px;
+ font-size: 18px;
+ text-transform: uppercase;
+ border: 0;
+ box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+ background-color: hsl(210deg 100% 44%);
+ border-radius: 12px;
+ overflow: hidden;
+ transition: 31ms cubic-bezier(.5, .7, .4, 1);
+}
+
+.btn:before {
+ content: attr(alt);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ inset: 0;
+ font-size: 15px;
+ font-weight: bold;
+ color: white;
+ letter-spacing: 4px;
+ opacity: 1;
+}
+
+.btn:active {
+ box-shadow: none;
+ transform: translateY(7px);
+ transition: 35ms cubic-bezier(.5, .7, .4, 1);
+}
+
+.btn:hover:before {
+ transition: all .0s;
+ transform: translateY(100%);
+ opacity: 0;
+}
+
+.btn i {
+ color: white;
+ font-size: 15px;
+ font-weight: bold;
+ letter-spacing: 4px;
+ font-style: normal;
+ transition: all 2s ease;
+ transform: translateY(-20px);
+ opacity: 0;
+}
+
+.btn:hover i {
+ transition: all .2s ease;
+ transform: translateY(0px);
+ opacity: 1;
+}
+
+.btn:hover i:nth-child(1) {
+ transition-delay: 0.045s;
+}
+
+.btn:hover i:nth-child(2) {
+ transition-delay: calc(0.045s * 3);
+}
+
+.btn:hover i:nth-child(3) {
+ transition-delay: calc(0.045s * 4);
+}
+
+.btn:hover i:nth-child(4) {
+ transition-delay: calc(0.045s * 5);
+}
+
+.btn:hover i:nth-child(6) {
+ transition-delay: calc(0.045s * 6);
+}
+
+.btn:hover i:nth-child(7) {
+ transition-delay: calc(0.045s * 7);
+}
+
+.btn:hover i:nth-child(8) {
+ transition-delay: calc(0.045s * 8);
+}
+
+.btn:hover i:nth-child(9) {
+ transition-delay: calc(0.045s * 9);
+}
+
+.btn:hover i:nth-child(10) {
+ transition-delay: calc(0.045s * 10);
+}
